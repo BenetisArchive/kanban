@@ -10,10 +10,20 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-stage-1": "^6.5.0",
     "css-loader": "^0.23.1",
     "html-webpack-plugin": "^2.9.0",
+    "react-transform-hmr": "^1.0.3",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.8.3"
+  },
+  "dependencies": {
+    "react": "^0.14.7"
   }
 }
