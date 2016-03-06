@@ -4,7 +4,8 @@ var webpack = require('webpack');
 var merge = require('webpack-merge');
 
 var TARGET = process.env.npm_lifecycle_event;
-process.env.BABEL_ENV = process.env.npm_lifecycle_event;
+process.env.BABEL_ENV = TARGET;
+
 var ROOT_PATH = path.resolve(__dirname);
 var APP_PATH = path.resolve(ROOT_PATH, 'app');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
