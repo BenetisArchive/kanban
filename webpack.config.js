@@ -2,6 +2,7 @@ var path = require('path');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 var merge = require('webpack-merge');
+require('es6-promise').polyfill();
 
 var TARGET = process.env.npm_lifecycle_event;
 process.env.BABEL_ENV = TARGET;
@@ -42,7 +43,8 @@ if(TARGET === 'start' || !TARGET) {
             historyApiFallback: true,
             hot: true,
             inline: true,
-            progress: true
+            progress: true,
+            chunks:false
         },
         plugins: [
             new webpack.HotModuleReplacementPlugin(),
