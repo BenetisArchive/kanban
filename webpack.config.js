@@ -44,7 +44,7 @@ if(TARGET === 'start' || !TARGET) {
             hot: true,
             inline: true,
             progress: true,
-            chunks:false
+            stats: 'errors-only'
         },
         plugins: [
             new webpack.HotModuleReplacementPlugin(),
