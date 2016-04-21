@@ -17,7 +17,7 @@ store.subscribe(() => {
 const app = document.createElement('div');
 document.body.appendChild(app);
 ReactDOM.render(
-    <Provider store=store>
+    <Provider store={store}>
         <App />
     </Provider>, app
 );
