@@ -1,5 +1,13 @@
 import uuid from 'node-uuid';
 
+export const DELETE_LIST = 'DELETE_LIST';
+export function deleteList(id) {
+    return {
+        type: DELETE_LIST,
+        id
+    };
+}
+
 export const CREATE_LIST = 'CREATE_LIST';
 export function createList(list) {
     return {
@@ -9,5 +17,5 @@ export function createList(list) {
             notes: list.notes || [],
             ...list
         }
-    };
+    }
 }

@@ -1,10 +1,7 @@
-import './main.css';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './containers/Root.jsx';
-import { Provider } from 'react-redux';
-import { configureStore } from './store/configureStore';
+import configureStore from './store/configureStore';
 import storage from './libs/storage';
 
 const APP_STORAGE = 'kanban';
@@ -14,10 +11,7 @@ store.subscribe(() => {
     storage.set(APP_STORAGE, store.getState());
 });
 
-const app = document.createElement('div');
-document.body.appendChild(app);
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>, app
+    <Root store={store} />,
+    document.getElementById('app')
 );
