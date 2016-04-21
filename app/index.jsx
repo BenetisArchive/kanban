@@ -2,7 +2,7 @@ import './main.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import Root from './containers/Root.jsx';
 import { Provider } from 'react-redux';
 import { configureStore } from './store/configureStore';
 import storage from './libs/storage';

@@ -47,7 +47,7 @@ if(TARGET === 'start' || !TARGET) {
             stats: 'errors-only'
         },
         plugins: [
-            // new webpack.HotModuleReplacementPlugin(),
+            new webpack.HotModuleReplacementPlugin(),
             new HtmlwebpackPlugin({
                 title: 'Kanban app'
             })
