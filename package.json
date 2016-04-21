@@ -35,8 +35,10 @@
     "webpack-merge": "^0.8.3"
   },
   "dependencies": {
+    "babel-preset-survivejs-kanban": "^0.3.3",
     "node-uuid": "latest",
     "react": "*",
+    "react-addons-update": "^15.0.1",
     "react-dom": "*",
     "react-redux": "^4.4.5",
     "redbox-react": "^1.2.2",
