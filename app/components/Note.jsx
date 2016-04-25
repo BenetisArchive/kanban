@@ -2,8 +2,9 @@ import React from 'react';
 
 class Note extends React.Component {
     render() {
+        const { ...props } = this.props;
         return (
-            <li>this is note!</li>
+            <li>{props.children}</li>
         );
     }
 }
