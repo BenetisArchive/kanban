@@ -6,6 +6,14 @@ export default function notes(state = initialState, action) {
     switch (action.type) {
         case types.CREATE_NOTE:
             return [...state, action.note];
+        case types.UPDATE_NOTE:
+            return state.map((note) => {
+                if(note.id === action.id) {
+                    return Object.assign({}, note, action);
+                }
+
+                return note;
+            });
         default:
             return state;
     }
