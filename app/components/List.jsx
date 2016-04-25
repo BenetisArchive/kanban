@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import { DropTarget } from 'react-dnd';
 import * as listActions from '../actions/lists';
 import * as noteActions from '../actions/notes';
+import Notes from './Notes.jsx';
+
 
 const noteTarget = {
     hover(targetProps, monitor) {
@@ -29,6 +31,9 @@ class List extends React.Component {
             <div className="lane-add-note">
                 <button onClick={this.addNote.bind(this, listId)}>+</button>
             </div>
+            <Notes
+                notes={listNotes}
+            />
         </div>
     }
     addNote(listId, e) {
