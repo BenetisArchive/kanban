@@ -40,7 +40,7 @@ class List extends React.Component {
         e.stopPropagation();
 
         const o = this.props.createNote({
-            task: 'New task'
+            task: 'New NOTE'
         });
         this.props.attachToList(listId, o.note.id);
     }
