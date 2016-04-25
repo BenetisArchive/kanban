@@ -33,6 +33,8 @@ class List extends React.Component {
             </div>
             <Notes
                 notes={listNotes}
+                onValueClick={id => props.updateNote({id, editing: true})}
+                onEdit={(id, task) => props.updateNote({id, task, editing: false})}
             />
         </div>
     }
