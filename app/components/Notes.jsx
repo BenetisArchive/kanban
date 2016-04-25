@@ -8,7 +8,7 @@ class Notes extends React.Component {
         console.log(notes);
         return (
             <ul className="notes">{notes.map((note) =>
-                <Note></Note>
+                <Note id={note.id} key={note.id}/>
             )}</ul>
         );
     }
