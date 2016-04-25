@@ -27,4 +27,4 @@ export function attachToList(listId, noteId) {
         listId,
         noteId
     };
-};
+}
