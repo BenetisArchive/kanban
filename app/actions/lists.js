@@ -19,3 +19,12 @@ export function createList(list) {
         }
     }
 }
+
+export const ATTACH_TO_LIST = 'ATTACH_TO_LIST';
+export function attachToList(listId, noteId) {
+    return {
+        type: ATTACH_TO_LIST,
+        listId,
+        noteId
+    };
+};

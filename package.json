@@ -42,6 +42,7 @@
     "react-dom": "*",
     "react-redux": "^4.4.5",
     "redbox-react": "^1.2.2",
-    "redux": "^3.5.1"
+    "redux": "^3.5.1",
+    "react-dnd": "latest"
   }
 }
